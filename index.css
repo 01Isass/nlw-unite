@@ -1,0 +1,136 @@
+*{            /*Esse daq é universal, vai pegar no css inteiro */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {     /* Esse daq é uma variavel q vou poder add sempre q colocar esse --border*/
+  --border: 1px solid #ffffff1a;
+}
+
+body, table, input, button {
+  font: 300 16px/140% 'Roboto', sans-serif; /* Essa virgula é so pra falar: se nao tiver Roboto pode ser a sans-serif */
+}
+
+body {
+  background-color: black;
+  color: #ffffff;
+  font: 16px 'Roboto', sans-serif; /* Essa virgula é so pra falar: se nao tiver Roboto pode ser a sans-serif */
+
+}
+
+.container {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+header{
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset{
+border: none;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper {
+  flex: 1;
+  
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: var(--border);
+  border-radius: 10px;
+
+  padding: 8px 12px;
+
+  font: 400 14px/150% 'Roboto', Sans-serif;
+  color: #c4c4cc;
+}
+
+input {
+  all: unset;
+}
+
+fieldset button{
+width: fit-content;
+border: 0;
+background: #f48f56;
+border-radius: 10px;
+padding: 7px 20px;
+
+font: 700 12px/24px 'Robot', Sans-serif;
+color: #00292e;
+}
+
+fieldset legend, section h2{
+  font: 700 16px/140% 'Roboto', Sans-serif;
+  color: #E1E2E6;
+  padding-bottom: 16px;
+}
+fieldset button:hover{
+  background: #f37c37;
+}
+
+.lista-participantes {
+  padding: 20px 0;
+}
+
+.lista-participantes > div {
+border: var(--border);
+border-radius: 8px;
+}
+
+table { 
+  border-collapse: collapse;
+}
+
+table thead {
+font-size: 14px;
+line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding:12px 16;  /* colocando 2 valores para o padding, o 1 valor consta em cima e em baixo, o 2 consta nas laterais - se colocar apenas 1 vai ser os 4 lados */ 
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 13px;
+  line-height: 15px;
+  color: #c4c4cc;
+}
+
+tbody td strong {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: #9ff9cc;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+}
